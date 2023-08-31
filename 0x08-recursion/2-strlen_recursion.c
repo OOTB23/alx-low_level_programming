@@ -13,7 +13,7 @@ int _strlen_recursion(char *s)
 
 	if (*s > '\0')
 	{
-		int sum = sum +  _strlen_recursion(s + 1) + 1;
+		sum = sum + _strlen_recursion(s + 1) + 1;
 	}
 	return (sum);
 }
