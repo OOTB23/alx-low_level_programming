@@ -1,7 +1,7 @@
 #include "main.h"
 int _prime_guess(int n, int x);
 /**
- * _is_prime_number- function to define prime  int
+ * is_prime_number- function to define prime  int
  *
  * @n: input int number
  *
@@ -27,12 +27,12 @@ int _prime_guess(int n, int x)
 	{
 		return (1);
 	}
-	else if (n % x == 0 || n <=1)
+	else if (n % x == 0 || n <= 1)
 	{
 		return (0);
 	}
 	else
 	{
-		return (_prime_guess(n, x+1));
+		return (_prime_guess(n, x + 1));
 	}
 }
