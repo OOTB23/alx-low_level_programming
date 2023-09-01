@@ -33,6 +33,6 @@ int _prime_guess(int n, int x)
 	}
 	else
 	{
-		return (_prime_guess(n, x+1);
+		return (_prime_guess(n, x+1));
 	}
 }
