@@ -1,0 +1,17 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * main- entery point
+ *
+ * @argc: input argument number
+ * @argv: argument value
+ *
+ * Return: nothing
+ */
+int main(int argc, char **argv)
+{
+	(void)argv;
+
+	printf("%d\n", argc);
+	return (0);
+}
