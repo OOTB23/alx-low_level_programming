@@ -4,14 +4,14 @@
  * main- entery point
  *
  * @argc: input argument number
- * @argc: argument
+ * @argv: argument value
  *
  * Return: nothing
  */
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	(void)argc;
 
-	printf ("%s\n", argv[0]);
-	return 0;
+	printf("%s\n", argv[0]);
+	return (0);
 }
