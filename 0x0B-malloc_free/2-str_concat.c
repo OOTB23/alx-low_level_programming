@@ -17,28 +17,32 @@ char *str_concat(char *s1, char *s2)
 
 	for (i1 = 0; s1[i1] != '\0'; i1++)
 	{
+		i1++;
 	}
 
 	for (i2 = 0; s2[i2] != '\0'; i2++)
 	{
+		i2++;
 	}
 
-	p = malloc((i1 * sizeof(*s1) + 1) + (i2 * sizeof(*s2) + 1));
+	p = malloc((i1 + i2) * sizeof(char) + 1);
 
 	if (p == NULL)
 	{
 		return (0);
 	}
 
-	for (; c1 <= i1; c1++)
+	for (; c1 < i1; c1++)
 	{
 		p[c] = s1[c1];
 		c++;
 	}
-	for (; c2 <= i2; c2++)
+	for (; c2 < i2; c2++)
 	{
 		p[c] = s2[c2];
 		c++;
 	}
+	p[c] = '\0';
+
 	return (p);
 }
