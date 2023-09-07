@@ -9,23 +9,24 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i = 1;
+	unsigned int i = 0;
+	unsigned int c = 0;
 	char *p;
 
 	while (*str)
 	{
 		i++;
 	}
-	p = malloc(i * sizeof(*str));
+	p = malloc(i * sizeof(*str) + 1);
 
 	if (i == 0 || p == NULL)
 	{
 		return (0);
 	}
 
-	while (i--)
+	for (; c < i; c++)
 	{
-		p[i] = str[i];
+		p[c] = str[c];
 	}
 	return (p);
 }
