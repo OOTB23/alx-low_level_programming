@@ -13,7 +13,12 @@ char *_strdup(char *str)
 	unsigned int c = 0;
 	char *p;
 
-	while (*str)
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	for (; str[i] != '\0'; i++)
 	{
 		i++;
 	}
