@@ -11,7 +11,6 @@
 char *create_array(unsigned int size, char c)
 {
 	char *p;
-	size_t x;
 
 	if (size == 0)
 	{
@@ -25,9 +24,9 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		for (x = 0; x < size; x++)
+		while (size--)
 		{
-			p[x] = c;
+			p[size] = c;
 		}
 		return (p);
 	}
