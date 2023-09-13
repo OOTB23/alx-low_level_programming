@@ -12,6 +12,6 @@ int main(void)
 	char *f;
 
 	f = __FILE__;
-	printf("%s \n", f);
+	printf("%s\n", f);
 	return (0);
 }
