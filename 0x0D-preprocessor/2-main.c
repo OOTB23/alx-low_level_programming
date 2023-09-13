@@ -10,16 +10,8 @@
 int main(void)
 {
 	char *f;
-	int l = 0;
 
 	f = __FILE__;
-	while (f)
-	{
-		l++;
-	}
-	for (; f[l] != '/'; l--)
-	{
-		_putchar(f[l]);
-	}
+	printf("%s \n", f);
 	return (0);
 }
