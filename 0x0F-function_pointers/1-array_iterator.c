@@ -2,7 +2,7 @@
 /**
  * array_iterator- excute fucntion array
  *
- * @arry: input int array
+ * @array: input int array
  * @action: print function pointer
  * @size: array size
  *
@@ -10,12 +10,13 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int *last_elment = array + sizei - 1;
-	
+	int *last_element = array + size - 1;
+
 	if (array && size && action)
 	{
-		while (array <= laste-element)
+		while (array <= last_element)
 		{
 			action(*array++);
+		}
 	}
 }
