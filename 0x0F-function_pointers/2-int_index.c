@@ -10,21 +10,18 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int *last_element = array + size - 1;
+	int element;
 
 	if (array && size && cmp)
 	{
-		while (array <= last_element)
+		while (element < size)
 		{
-			if (cmp(*array++) != 0)
+			if (cmp(array[element] != 0)
 			{
-				return (*array);
+				return (element);
 			}
+			element++;
 		}
-		return (-1);
 	}
-	else
-	{
-		return (-1);
-	}
+	return (-1);
 }
